@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felices 7 meses mi amor!!!</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mojs/core"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>Para Mi Bere</strong>
+                        <p>Hola mi vida hermosa, mi amor por ti es demasiado grande.
+                        Quiero que tu y yo estemos juntos mucho tiempo.
+                        Eres el amor de mi vida!
+                        Felices 7 meses mi vida!! Te amo</p>
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <button id='heart' class='button'>❤️</button>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+        document.getElementById('heart').addEventListener('click', function() {
+        window.location.href = 'love.html';
+        });
+    </script>
+</body>
+</html>
